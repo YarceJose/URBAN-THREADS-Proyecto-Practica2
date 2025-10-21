@@ -1,0 +1,270 @@
+/* ============================== */
+/* ESTRUCTURA GENERAL */
+/* ============================== */
+/* *{
+      outline: 1px solid #101313;
+} */
+.section-page-contact {
+    display: flex;
+    flex-direction: column;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    background-color: #fafafa;
+    font-family: 'Inter', sans-serif;
+
+}
+
+/* ============================== */
+/* CABECERA */
+/* ============================== */
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 58px;
+    text-align: center;
+}
+
+.contact h2 {
+    color: rgb(17, 24, 39);
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.contact p {
+    color: rgb(75, 85, 99);
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+/* ============================== */
+/* SECCIÓN PRINCIPAL */
+/* ============================== */
+.section-contact {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    justify-content: center;
+    align-items: start;
+    height: 948px;
+    padding-left: 260px;
+    padding-right: 260px;
+    padding-top: 30px;
+    gap: 60px;
+}
+
+/* ============================== */
+/* ASIDE IZQUIERDO */
+/* ============================== */
+.aside-info {
+    width: 424px;
+    line-height: 24px;
+}
+
+.aside-info h3 {
+    font-size: 26px;
+    color: rgb(17, 24, 39);
+    margin-bottom: 20px;
+}
+
+.info-contact {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 32px;
+    gap: 16px;
+}
+
+.icon-contact {
+    width: 48px;
+    height: 48px;
+    background-color: rgb(17, 24, 39);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.icon-contact:hover {
+    background-color: rgb(31, 41, 55);
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    color: rgb(255, 255, 255);
+}
+
+.content-info {
+    margin-left: 8px;
+}
+
+.content-info h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(17, 24, 39);
+}
+
+.content-info p {
+    color: rgb(75, 85, 99);
+    font-size: 17px;
+    line-height: 28px;
+}
+
+/* ============================== */
+/* ASIDE DERECHO */
+/* ============================== */
+.aside-mensaje {
+    width: 400px;
+    padding: 32px;
+
+    gap: 24px;
+    background-color: #fff;
+    box-shadow: 0px 0px 25px #1013131f;
+}
+
+.aside-mensaje h3 {
+    font-size: 28px;
+    color: rgb(17, 24, 39);
+    font-weight: 600;
+}
+
+.detall-aside {
+    width: 400px;
+    height: 105px;
+    margin-top: 20px;
+    background-color: rgb(254, 243, 199);
+    border-left: 4px solid rgb(245, 158, 11);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detall-aside p {
+    padding: 18px;
+    font-size: 18px;
+    width: 90%;
+    color: rgb(180, 83, 9);
+    line-height: 1.4;
+}
+
+/* ============================== */
+/* FORMULARIO */
+/* ============================== */
+.form-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-form {
+    display: flex;
+    gap: 40px;
+    padding-top: 30px;
+}
+
+.info-form div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+label {
+    font-weight: 600;
+    font-size: 14px;
+    color: #111827;
+    text-transform: uppercase;
+}
+
+/* ============================== */
+/* CAMPOS */
+/* ============================== */
+input,
+select,
+textarea {
+    border: 1px solid #d1d5db;
+    background-color: #fff;
+    color: #111827;
+    font-size: 16px;
+    padding: 10px;
+    transition: all 0.2s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 5px rgba(37, 99, 235, 0.4);
+}
+
+/* Manteniendo tus tamaños originales */
+#Nombre {
+    width: 160px;
+    height: 40px;
+}
+
+#Apellido {
+    width: 160px;
+    height: 40px;
+}
+
+#Email {
+    width: 380px;
+    height: 40px;
+}
+
+#Asunto {
+    width: 400px;
+    height: 60px;
+}
+
+#Mensaje {
+    width: 380px;
+    height: 180px;
+    font-size: 18px;
+    padding: 10px;
+    resize: vertical;
+}
+
+/* ============================== */
+/* BOTÓN */
+/* ============================== */
+.form-contact button {
+    width: 400px;
+    height: 60px;
+    background-color: rgb(17, 24, 39);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 40px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form-contact button:hover {
+    background-color: rgb(31, 41, 55);
+    transform: translateY(-2px);
+}
+
+/* ============================== */
+/* RESPONSIVE */
+/* ============================== */
+@media (max-width: 1024px) {
+    .section-contact {
+        grid-template-columns: 1fr;
+        height: auto;
+        padding: 20px 40px;
+        gap: 50px;
+    }
+
+    .aside-info,
+    .aside-mensaje {
+        width: 100%;
+    }
+
+    .form-contact button {
+        width: 100%;
+    }
+}
