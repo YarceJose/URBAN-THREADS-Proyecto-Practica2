@@ -10,7 +10,7 @@ import { MdOutlineEmail } from "react-icons/md";
 function Contact() {
     return (
         <>
-            <Navbar />
+            {/* <Navbar /> */}
             <section className="section-page-contact">
                 <div className="contact">
                     <h2>CONTACTO</h2>
@@ -131,7 +131,7 @@ function Contact() {
                     </aside>
                 </article>
             </section>
-            <Footer />
+            {/* <Footer /> */}
         </>
     );
 }

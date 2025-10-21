@@ -22,7 +22,7 @@ export default function SectionCard() {
 
     return (
         <>
-            <Navbar />
+           {/*  <Navbar /> */}
 
             <section className="section-cards">
                 <header className="encabezado">
@@ -43,7 +43,7 @@ export default function SectionCard() {
                 </div>
             </section>
 
-            <Footer />
+           {/*  <Footer /> */}
         </>
     );
 }

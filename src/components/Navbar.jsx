@@ -9,9 +9,9 @@ function Navbar() {
                     <h1 className="nav-text">URBAN THREADS</h1>
                 </div>
                 <div className="nav-links">
-                    <Link className="nav-link" to="/">Inicio</Link>
-                    <Link className="nav-link" to="/productos">Productos</Link>
-                    <Link className="nav-link" to="/contacto">Contacto</Link>
+                   <Link className="nav-link" to="/">Inicio</Link>
+                    <Link className="nav-link" to="/product">Productos</Link>
+                    <Link className="nav-link" to="/contact">Contacto</Link> 
                 </div>
             </div>
         </nav>

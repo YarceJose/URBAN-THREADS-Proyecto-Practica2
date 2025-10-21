@@ -8,7 +8,7 @@ import Footer from '../components/Footer';
 function Home() {
     return (
         <>
-            <Navbar />
+            {/* <Navbar /> */}
 
             <section className='section-home'>
                 <div className='home-items'>
@@ -48,7 +48,7 @@ function Home() {
                 </div>
             </section>
 
-            <Footer />
+           {/*  <Footer /> */}
         </>
     );
 }
