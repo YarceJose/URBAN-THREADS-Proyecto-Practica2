@@ -1,7 +1,8 @@
 import './Product.css';
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import Cards from "../components/Cards";
+import Navbar from '../../components/Navbar';
+import Cards from '../../components/Cards';
+import Footer from '../../components/Footer';
+
 
 import { LuStretchVertical } from "react-icons/lu";
 import { PiPantsFill } from "react-icons/pi";
@@ -22,7 +23,7 @@ export default function SectionCard() {
 
     return (
         <>
-           {/*  <Navbar /> */}
+            <Navbar />
 
             <section className="section-cards">
                 <header className="encabezado">
@@ -43,7 +44,7 @@ export default function SectionCard() {
                 </div>
             </section>
 
-           {/*  <Footer /> */}
+            <Footer />
         </>
     );
 }

@@ -2,13 +2,13 @@ import './Home.css'
 import { CiCircleCheck } from "react-icons/ci";
 import { MdOutlineElectricBolt } from "react-icons/md";
 import { DiUnitySmall } from "react-icons/di";
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
 
 function Home() {
     return (
         <>
-            {/* <Navbar /> */}
+            <Navbar />
 
             <section className='section-home'>
                 <div className='home-items'>
@@ -48,7 +48,7 @@ function Home() {
                 </div>
             </section>
 
-           {/*  <Footer /> */}
+            <Footer />
         </>
     );
 }

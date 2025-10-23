@@ -18,3 +18,4 @@ const Cards = ({ title, detall, precio, icon }) => {
         </div>
     );
 };
+export default Cards;

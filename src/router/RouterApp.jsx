@@ -1,8 +1,9 @@
-import Home from "../pages/Home";
-import SectionCard from "../pages/Product";
-import Contact from "../pages/Contact"
+import Contact from "../pages/Contact/Contact";
+import Home from "../pages/Home/Home";
+import SectionCard from "../pages/Product/Product";
 
-let routerApp = [
+
+let RouterApp = [
   {
     path: "/",
     element: <Home />,
@@ -16,3 +17,4 @@ let routerApp = [
     element: <Contact />
   },
 ];
+export default RouterApp;
