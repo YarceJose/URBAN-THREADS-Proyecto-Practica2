@@ -2,13 +2,11 @@ import './Home.css'
 import { CiCircleCheck } from "react-icons/ci";
 import { MdOutlineElectricBolt } from "react-icons/md";
 import { DiUnitySmall } from "react-icons/di";
-import Navbar from '../../components/Navbar';
-import Footer from '../../components/Footer';
+import { Link } from "react-router-dom";
 
 function Home() {
     return (
         <>
-            <Navbar />
 
             <section className='section-home'>
                 <div className='home-items'>
@@ -16,7 +14,7 @@ function Home() {
                         ESTILO URBANO <span>REDEFINIDO</span>
                     </h2>
                     <p>Descubre nuestra colección exclusiva de ropa urbana minimalista</p>
-                    <button className='btn-home'>EXPLORAR COLECCIÓN</button>
+                    <button className='btn-home'> <Link className='Link' to="/product"> EXPLORAR COLECCIÓN</Link></button>
                 </div>
             </section>
 
@@ -48,7 +46,6 @@ function Home() {
                 </div>
             </section>
 
-            <Footer />
         </>
     );
 }

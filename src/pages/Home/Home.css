@@ -1,6 +1,6 @@
-/* * {
+/*  * {
     outline: 1px solid yellow;
-} */
+}  */
 
 /* ======= SECCIÓN PRINCIPAL ======= */
 .section-home {
@@ -16,36 +16,40 @@
 }
 
 .home-items {
-    max-width: 900px;
+    /* max-width: 900px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1.2rem;
+    /* gap: 1.2rem; */
     line-height: 1.4;
 }
 
 .home-items h2 {
     color: white;
-    font-size: 4rem;
+    font-size: 4.1rem;
     font-weight: 700;
     text-shadow: 2px 2px 3px #101313;
-    margin-bottom: 0.5rem;
 }
 
 .home-items h2 span {
     color: #fbbf24;
-    font-size: 4rem;
+    font-size: 4.1rem;
     letter-spacing: -1px;
-    margin-top: 0.5rem;
+    /* margin-top: 0.5rem; */
     display: block;
+    position: relative;
+    top: -27px;
 }
 
 .home-items p {
     color: rgb(240, 248, 255);
-    font-size: 1.4rem;
-    max-width: 600px;
-    margin-bottom: 1.5rem;
+    font-size: 27px;
+    max-width: 900px;
+    position: relative;
+    top: -30px;
+    gap: 20px;
+    padding: 13px;
 }
 
 /* Botón principal */
@@ -53,13 +57,17 @@
     width: 280px;
     height: 62px;
     background-color: #f59e0b;
+    border: none;
+    transition: transform 0.3s ease, 
+    background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.Link {
+    text-decoration: none;
     color: #101313;
     font-weight: 700;
     font-size: 1.1rem;
-    border: none;
-    border-radius: 6px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    cursor: pointer;
 }
 
 .btn-home:hover {
@@ -69,9 +77,10 @@
 
 /* ======= SECCIÓN DE ITEMS ======= */
 .section-items {
-    min-height: 50vh;
+    height: 52vh;
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     padding: 4rem 2rem;
     background-color: #f9fafb;
@@ -83,7 +92,7 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
-    max-width: 1100px;
+    max-width: 2100px;
     width: 100%;
 }
 
@@ -96,24 +105,19 @@
     justify-content: center;
     align-items: center;
     background: white;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); */
     padding: 1.5rem;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.item-section:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-}
 
 /* Íconos */
 .icon-section {
     background-color: rgb(17, 24, 39);
     color: aliceblue;
-    width: 4.5em;
-    height: 4.5em;
-    border-radius: 50%;
+    width: 4em;
+    height: 4em;
     display: flex;
     justify-content: center;
     align-items: center;
